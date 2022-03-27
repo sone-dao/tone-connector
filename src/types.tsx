@@ -1,15 +1,15 @@
 export type ServiceInfo = {
-    name: string
-    platforms: string[]
-    desc?: string
-    image?: string
-    wallet?: string
+    name: string // Name of your service. (Max: 80 char)
+    platforms: string[] // String array of platform unique ids from the Tone metadata database (https://platforms.dev.tone.audio)
+    desc?: string // Description of the service
+    image?: string // Accessible image url for the service
+    wallet?: string // For tips
 }
 
 export type SearchResult = {
-    id: string
-    displayName?: string
-    displayImage?: string
+    id: string // Unique identifier of the result on the platform
+    displayName?: string // Display name for the result
+    displayImage?: string // Display image for the result
 }
 
 export type Artist = {
