@@ -1,5 +1,7 @@
 import 'dotenv/config'
 import express from 'express'
+import axios from 'axios'
+
 
 import healthRouter from './routes/health'
 import infoRouter from './routes/info'
@@ -18,6 +20,8 @@ app.use('/artist', artistRouter())
 app.use('/release', releaseRouter())
 app.use('/song', songRouter())
 
-app.listen(port, () => {
+app.listen(port, async () => {
 	console.log(`Tone Connector running on ${port}`)
+
+	console.log(await axios.post('https://connect.tone.audio', { remote: process.env.REMOTE }).then(res => console.log(res.data)))
 })

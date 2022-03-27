@@ -1,8 +1,9 @@
 export type ServiceInfo = {
     name: string
-    platform: string[]
+    platforms: string[]
     desc?: string
     image?: string
+    wallet?: string
 }
 
 export type SearchResult = {
@@ -15,6 +16,8 @@ export type Artist = {
     id: string // Unique identifier of the artist on the platform
     name: string // Name for the artist
     releases: string[] // A string array containing platform unique identifiers to releases that fall under this artist
+    image?: string // Path to an image of this artist
+    images?: string[] // A string array containing paths to images of this artist
     songs?: string[] // A string array containing platform unique identifiers to songs that fall under this artist
     location?: string // Name of the artist's location
     bio?: string // A written biography for the artist

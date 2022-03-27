@@ -5,10 +5,10 @@ export const releaseRouter = (): express.Router => {
     const router = express.Router()
 
     router.get('/:id', (req, res) => {
-        const artistId = req.params.id
+        const releaseId = req.params.id
 
         const result: Release = {
-            id: artistId,
+            id: releaseId,
             name: '',
             songs: ['']
         }
