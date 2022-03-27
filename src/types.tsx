@@ -27,13 +27,13 @@ export type Artist = {
 }
 
 export type Release = {
-    id: string
-    name: string
-    songs: string[]
-    cover?: string
-    performers?: string
-    producers?: string
-    engineers?: string
+    id: string // Unique identifier of the release on the platform
+    name: string // Name for the release
+    songs: string[] // A string array containing platform unique identifiers to the songs that fall under this release
+    cover?: string // Path to an image for this release
+    performers?: string // Display text for the performers of this release
+    producers?: string // Display text for the producers of this release
+    engineers?: string // display text for the engineers of this release
 
 }
 
