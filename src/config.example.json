@@ -12,5 +12,8 @@
             "song": "/search/song?q=",
             "release": "?type=search&release="
         }
-    }
+    },
+    "description" : "An example Tone Connector built with Typescript and Express.",
+    "image": "https://example.com/areallyniceimageforyourservice.png",
+    "wallet": "ex03584309853248d09824320498"
 }
