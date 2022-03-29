@@ -1,0 +1,16 @@
+{
+    "name": "tone-connector",
+    "display": "Tone Connector",
+    "version": "1.0.0a",
+    "platforms" : ["018ed3c4-dd58-4981-84a8-2517b9a8ff38"],
+    "params" : {
+        "artist" : "/artist/",
+        "song": "/song?q=",
+        "release": "?type=release",
+        "search": {
+            "artist": "/search/artist/",
+            "song": "/search/song?q=",
+            "release": "?type=search&release="
+        }
+    }
+}
