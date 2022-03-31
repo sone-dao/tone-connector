@@ -1,5 +1,6 @@
 export type ServiceInfo = {
-    name: string // Name of your service. (Max: 80 char)
+    name: string // A unique name for your service for the Tone protocol. (Max: 80 char, no spaces or special characters)
+    display: string // The display name for your service
     platforms: string[] // String array of platform unique ids from the Tone metadata database (https://platforms.dev.tone.audio)
     desc?: string // Description of the service
     image?: string // Accessible image url for the service
@@ -38,7 +39,7 @@ export type Release = {
 }
 
 type Stream = {
-    path: string
+    path: string // URL path to the file to stream, to be expanded on to include other metadata
 }
 
 export type Song = {

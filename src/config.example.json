@@ -1,18 +1,18 @@
 {
     "name": "tone-connector",
     "display": "Tone Connector",
-    "version": "1.0.0a",
     "platforms" : ["018ed3c4-dd58-4981-84a8-2517b9a8ff38"],
     "params" : {
         "artist" : "/artist/",
-        "song": "/song?q=",
-        "release": "?type=release",
+        "song": "/song?id=",
+        "release": "?type=release&id=",
         "search": {
             "artist": "/search/artist/",
             "song": "/search/song?q=",
             "release": "?type=search&release="
         }
     },
+    "version": "1.0.0a",
     "description" : "An example Tone Connector built with Typescript and Express.",
     "image": "https://example.com/areallyniceimageforyourservice.png",
     "wallet": "ex03584309853248d09824320498"
